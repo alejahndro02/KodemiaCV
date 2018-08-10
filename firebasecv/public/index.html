@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Kodemia CV Builder</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-grid.css">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<a class="navbar-brand" href="#"><img src="img/kodemia-white.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent"></div>
+			<div id="sign-in" class="btn btn-outline-success float-right">Facebook</div>
+			<div id="sign-out" class="btn btn-outline-success float-right">Salir</div>
+		</nav>
+		<div class="section main-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col col-sm-8 offset-sm-2">
+						<div class="card">
+							<div class="card-body">
+								<div class="step step-1">
+									<h1>Ingresa tus datos personales</h1>
+									<h2>Información general</h2>
+									<div class="row">
+										<div class="form-group col-sm-6">
+											<label for="">Nombre</label>
+											<input type="text" class="form-control" id="f-name" placeholder="Nombre">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Teléfono</label>
+											<input type="text" class="form-control" id="f-phone" placeholder="Teléfono">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Ocupación
+											</label>
+											<input type="text" class="form-control" id="f-occupation" placeholder="Cargo actual">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Dirección</label>
+											<input type="text" class="form-control" id="f-address" placeholder="Dirección">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Email</label>
+											<input type="text" class="form-control" id="f-email" placeholder="Email">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Sitio Web</label>
+											<input type="text" class="form-control" id="f-web" placeholder="Sitio Web">
+										</div>
+									</div>
+									<h2>Redes sociales</h2>
+									<div class="row">
+										<div class="form-group col-sm-6">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="f-c-facebook" onclick="toggleInputControl(this)">
+												<label class="form-check-label" for="defaultCheck1">Facebook</label>
+											</div>
+											<input type="text" class="form-control" id="f-facebook" placeholder="Facebook" disabled>
+										</div>
+										<div class="form-group col-sm-6">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="f-t-twitter" onclick="toggleInputControl(this)">
+												<label class="form-check-label" for="defaultCheck1">Twitter</label>
+											</div>
+											<input type="text" class="form-control" id="f-twitter" placeholder="Twitter" disabled>
+										</div>
+										<div class="form-group col-sm-6">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="f-c-linkedin" onclick="toggleInputControl(this)">
+												<label class="form-check-label" for="defaultCheck1">Linkedin</label>
+											</div>
+											<input type="text" class="form-control" id="f-linkedin" placeholder="Linkedin" disabled>
+										</div>
+										<div class="form-group col-sm-6">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="f-c-skype" onclick="toggleInputControl(this)">
+												<label class="form-check-label" for="defaultCheck1">Skype</label>
+												<input type="text" class="form-control" id="f-skype" placeholder="Skype" disabled>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="step step-2 experience-form all-wrapper">
+									<div class="row">
+										<div class="col-sm-12">
+											<h1>Experiencia</h1>
+											<h2>Empleos anteriores</h2>
+											<div class="experience-wrapper d-flex flex-row flex-wrap"></div>
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Empresa</label>
+											<input type="text" class="form-control f-experience" id="f-company" placeholder="Empresa">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Puesto</label>
+											<input type="text" class="form-control f-experience" id="f-role" placeholder="Puesto">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Descripción del puesto</label>
+											<input type="text" class="form-control f-experience" id="f-descripcionRole" placeholder="Descripción del puesto">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Periodo</label>
+											<div class="row">
+												<div class="form-group col-sm-6">
+													<input type="text" class="form-control f-experience" id="f-fromJobs" placeholder="De (año)">
+												</div>
+												<div class="form-group col-sm-6">
+													<input type="text" class="form-control f-experience" id="f-toJobs" placeholder="a (año)">
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3 offset-sm-9">
+											<div id="btn-experience" class="btn btn-outline-success btn-block">Agregar</div>
+										</div>
+									</div>
+								</div>
+								<div class="step step-2 education-form all-wrapper">
+									<div class="row">
+										<div class="col-sm-12">
+											<h2>Educación</h2>
+											<div class="education-wrapper d-flex flex-row flex-wrap"></div>
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Institución o plantel</label>
+											<input type="text" class="form-control f-education" id="f-institution" placeholder="Institución o Plantel">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Título recibido</label>
+											<input type="text" class="form-control f-education" id="f-title" placeholder="Título recibido">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Descripción</label>
+											<input type="text" class="form-control f-education" id="f-descriptionEducation" placeholder="Descripción">
+										</div>
+										<div class="form-group col-sm-6">
+											<label for="">Periodo</label>
+											<div class="row">
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control f-education" id="f-fromEducation" placeholder="De (año)">
+													</div>
+												</div>
+												<div class="col-sm-6">
+													<div class="form-group">
+														<input type="text" class="form-control f-education" id="f-toEducation" placeholder="a (año)">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3 offset-sm-9">
+											<div id="btn-education" class="btn btn-outline-success btn-block">Agregar</div>
+										</div>
+									</div>
+								</div>
+								<div class="step step-2 recognition-form all-wrapper">
+									<div class="row">
+										<div class="col-sm-12">
+											<h2>Reconocimientos</h2>
+											<div class="recognition-wrapper d-flex flex-row flex-wrap"></div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="">Reconocimiento recibido</label>
+												<input type="text" class="form-control f-recognition" id="f-recognitionReceived" placeholder="Reconocimiento recibido">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="">Fecha</label>
+												<input type="text" class="form-control f-recognition" id="f-recognitionDate" placeholder="Fecha">
+											</div>
+										</div>
+										<div class="col-sm-3 offset-sm-9">
+											<div id="btn-recognition" class="btn btn-outline-success btn-block">Agregar</div>
+										</div>
+									</div>
+								</div>
+								<div class="step step-3 skill-form all-wrapper">
+									<div class="row">
+										<div class="col-sm-12">
+											<h1>Habilidades y Experiencia</h1>
+											<h2>Escribe el nombre de tu habilidad y el porcentaje en que la dominas (p.e. Inglés 80%) </h2>
+											<div class="skill-wrapper d-flex flex-row flex-wrap"></div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="">Habilidad</label>
+												<input type="text" class="form-control f-skill" id="f-skill" placeholder="Habilidad">
+											</div>
+										</div>
+										<div class="col-sm-6">
+											<div class="form-group">
+												<label for="">Dominio (%)</label>
+												<input type="text" class="form-control f-skill" id="f-skillPercentage" placeholder="Dominio">
+											</div>
+										</div>
+										<div class="col-sm-3 offset-sm-9">
+											<div id="btn-skill" class="btn btn-outline-success btn-block">Agregar</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-4 offset-sm-4">
+										<div id="btn-cv" class="btn btn-outline-success btn-block">Generar CV</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="modal-cv" class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<p></p>
+					</div>
+					<div class="modal-footer">
+						<button id="btn-close-modal" type="button" class="btn btn-primary"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/firebase.js" charset="utf-8"></script>
+		<script src="js/form.js" charset="utf-8"></script>
+	</body>
+</html>

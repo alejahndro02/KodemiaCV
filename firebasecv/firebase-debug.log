@@ -1,0 +1,32 @@
+[debug] [2018-08-10T19:22:14.467Z] ----------------------------------------------------------------------
+[debug] [2018-08-10T19:22:14.472Z] Command:       /usr/bin/node /usr/bin/firebase serve
+[debug] [2018-08-10T19:22:14.472Z] CLI Version:   4.0.3
+[debug] [2018-08-10T19:22:14.472Z] Platform:      linux
+[debug] [2018-08-10T19:22:14.472Z] Node Version:  v8.11.3
+[debug] [2018-08-10T19:22:14.473Z] Time:          Fri Aug 10 2018 14:22:14 GMT-0500 (CDT)
+[debug] [2018-08-10T19:22:14.473Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-10T19:22:14.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-10T19:22:14.486Z] > authorizing via signed-in user
+[debug] [2018-08-10T19:22:14.490Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/fir-cv-90c46  
+  
+ Fri Aug 10 2018 14:22:14 GMT-0500 (CDT)
+[debug] [2018-08-10T19:22:14.864Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-10T19:22:14.865Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/fir-cv-90c46/tokens  
+  
+ Fri Aug 10 2018 14:22:14 GMT-0500 (CDT)
+[debug] [2018-08-10T19:22:15.330Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-10T19:22:15.332Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/fir-cv-90c46  
+  
+ Fri Aug 10 2018 14:22:15 GMT-0500 (CDT)
+[debug] [2018-08-10T19:22:15.753Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/telmexhub/firebasecv'...
+[info] 
+[debug] [2018-08-10T19:22:15.756Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/848239669306/clients/_:getWebAppConfig  
+  
+ Fri Aug 10 2018 14:22:15 GMT-0500 (CDT)
+[debug] [2018-08-10T19:22:16.263Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
