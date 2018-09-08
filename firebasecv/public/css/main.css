@@ -213,8 +213,8 @@ body {
   -webkit-mask-size: 100% 100%;
 }
 .personal-data .data-wrapper .data-label.twitter:before {
-  -webkit-mask: url("../img/svg/twitter-logo.svg") no-repeat 100%;
-  mask: url("../img/svg/twitter-logo.svg") no-repeat 100%;
+  -webkit-mask: url("../img/svg/octoface.svg") no-repeat 100%;
+  mask: url("../img/svg/octoface.svg") no-repeat 100%;
   mask-size: 100% 100%;
   -webkit-mask-size: 100% 100%;
 }
